@@ -1,0 +1,35 @@
+# --- Python bytecode / caches ---
+__pycache__/
+*.py[cod]
+
+# --- Virtual environment ---
+.venv/
+venv/
+
+# --- Secrets & local config ---
+.env
+.env.*
+!.env.example
+
+# --- Test & tool caches ---
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- Build artifacts ---
+build/
+dist/
+*.egg-info/
+
+# --- Generated data & ML models (reproducible, often large) ---
+data/generated/
+models/*.joblib
+models/*.pkl
+
+# --- Editor / OS noise ---
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
