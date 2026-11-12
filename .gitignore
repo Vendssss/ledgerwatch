@@ -23,10 +23,20 @@ build/
 dist/
 *.egg-info/
 
-# --- Generated data & ML models (reproducible, often large) ---
+# --- Datasets (Kaggle creditcard.csv is ~150 MB and licensed; never commit) ---
+data/raw/*
+data/processed/*
 data/generated/
-models/*.joblib
-models/*.pkl
+!data/**/.gitkeep
+*.csv
+*.parquet
+
+# --- ML models (reproducible from training scripts, often large) ---
+models/*
+!models/.gitkeep
+
+# --- Jupyter ---
+.ipynb_checkpoints/
 
 # --- Editor / OS noise ---
 .vscode/
